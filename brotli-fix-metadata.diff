@@ -1,0 +1,16 @@
+--- brotli-3.3.0/Cargo.toml	1970-01-01T00:00:00+00:00
++++ brotli-3.3.0/Cargo.toml	2019-12-14T19:13:13.405220+00:00
+@@ -22,6 +22,13 @@
+ keywords = ["brotli", "decompression", "lz77", "huffman", "nostd"]
+ license = "BSD-3-Clause/MIT"
+ repository = "https://github.com/dropbox/rust-brotli"
++exclude = [
++  "/ci/*",
++  "/research/*",
++  "/.travis.yml",
++  "/appveyor.yml",
++  "/uncorrode.py",
++]
+ [profile.release]
+ lto = true
+ incremental = false
